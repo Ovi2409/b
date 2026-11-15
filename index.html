@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cover Page -->
+    <section class="cover" id="cover">
+
+        <div class="cover-content">
+            <p class="small-title">♡ OUR Dream 🥵 </p>
+
+            <div class="cover-icon">📸</div>
+
+            <h1> <span>Oi eka khuilo madam 🫣</span></h1>
+
+            <p class="subtitle">
+               
+            </p>
+
+            <div class="cover-decoration">
+                
+            </div>
+
+            <button class="open-btn" onclick="openGallery()">
+                Fantasy World 🥵
+            </button>
+
+            <p class="bottom-text">
+                
+        </div>
+
+    </section>
+
+
+    <!-- Gallery Page -->
+    <section class="gallery-page" id="gallery">
+
+        <header class="gallery-header">
+            <p>🥵 DREAM 🥵</p>
+            <h2></h2>
+            <p>.</p>
+        </header>
+
+        
+            <input type="file" id="photoUpload"
+                   accept="image/*" multiple hidden>
+
+            <p></p>
+        </div>
+
+        <div class="photo-grid" id="photoGrid">
+            <!-- Photos will appear here from JavaScript -->
+        </div>
+
+        <footer>
+            
+            <br>
+            <button class="back-btn" onclick="backToCover()">
+                ← Back to Cover
+            </button>
+        </footer>
+
+    </section>
+
+
+    <!-- Image Popup -->
+    <div class="modal" id="photoModal">
+
+        <button class="close-btn" onclick="closeModal()">×</button>
+
+        <button class="nav-btn prev" onclick="changePhoto(-1)">❮</button>
+
+        <div class="modal-content">
+            <img src="" id="modalImage" alt="Memory">
+
+            <div class="note-box">
+                <h2 id="modalTitle"></h2>
+                <p id="modalNote"></p>
+                <span>Need ❤️</span>
+            </div>
+        </div>
+
+        <button class="nav-btn next" onclick="changePhoto(1)">❯</button>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
